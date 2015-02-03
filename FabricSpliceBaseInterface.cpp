@@ -1350,6 +1350,7 @@ void FabricSpliceBaseInterface::invalidateNode()
       }
       else
       {
+        collectDirtyPlug(plug);
         invalidatePlug(plug);
 
         MPlugArray plugs;
